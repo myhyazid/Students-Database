@@ -6,6 +6,8 @@ If you are from any instiution you can use this system to kept all of your stude
 This system was created using the BigProf AppGini Application (Trial).Maybe i will commit this file with the new code or maybe not.
 If you can see this system looks like metro UI design
 
+Demo : http://squireel.3owl.com/
+
 Enjoy!!!
 
 I created all of this file using Malay Language if you don't understand i can explain it here :
