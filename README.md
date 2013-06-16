@@ -20,7 +20,7 @@ Pentadbir=Administrator
 <br>
 <h2>How to Install</h2>
 <br>
-First transfer file from php folder to your webserver using FTP.(easier)
+First extract file to desktop and then transfer file from php folder to your webserver using FTP.(easier)
 <br>
 Second once you have transfer all of this files logon to this students-database location(e.g : http://(yourprefferedname).mydomain.com/
 or http://mydomain.com/(yourprefferedname)
@@ -30,3 +30,7 @@ Third once you have logon to the above link,you will be redirect to installation
 4th enter your server detail and your detail as admin
 <br>
 last step choose your destination either to admin panel or user control panel to add user data.
+<br>
+after you have successfully installed you can check or change the data in database.
+<br>
+<h2>Enjoy!</h2>
