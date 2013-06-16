@@ -7,3 +7,10 @@ This system was created using the BigProf AppGini Application (Trial).Maybe i wi
 If you can see this system looks like metro UI design
 
 Enjoy!!!
+
+I created all of this file using Malay Language if you don't understand i can explain it here :
+
+Malay     English
+Maklumat = Detail
+Guru     =Teacher
+Pentadbir=Administrator
