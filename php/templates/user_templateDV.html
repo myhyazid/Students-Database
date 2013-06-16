@@ -1,0 +1,83 @@
+<!-- Edit this file to change the layout of the detail view form -->
+
+<style type="text/css"><!--  #noMouseOver:hover{ color: #000000; }  --></style>
+<table border="0" cellpadding="0" cellspacing="0" id="dvContainer">
+	<tr>
+		<td>
+			<div class=TableTitle><%%DETAIL_VIEW_TITLE%%></div>
+			</td>
+		</tr>
+	<tr>
+		<td class="TableHeader" colspan="3">
+			<div class="buttons" style="float: right;">
+				</div>
+			</td>
+		</tr>
+	<tr>
+		<td>
+			<table id="dvForm" cellspacing="1" cellpadding="0">
+				<tr>
+					<td colspan=2></td>
+					<td rowspan="6" valign="top"><div class="buttons dv">
+						<%%DVPRINT_BUTTON%%>
+						<%%UPDATE_BUTTON%%>
+						<%%DELETE_BUTTON%%>
+						<%%DESELECT_BUTTON%%>
+						<br />
+						<%%INSERT_BUTTON%%>
+						</div></td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">ID</div>
+						</td>
+					<td class="TableBody" id="noMouseOver" valign="top"><%%VALUE(id)%%>&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Nama</div>
+						</td>
+					<td class="TableBody" id="noMouseOver" valign="top"><input tabindex="1" maxlength="40" size="40" type="text" class="TextBox" name="nama" id="nama" value="<%%VALUE(nama)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Nokp</div>
+						</td>
+					<td class="TableBody" id="noMouseOver" valign="top"><input tabindex="1" maxlength="40" size="40" type="text" class="TextBox" name="nokp" id="nokp" value="<%%VALUE(nokp)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Pass</div>
+						</td>
+					<td class="TableBody" id="noMouseOver" valign="top"><input tabindex="1" maxlength="40" size="40" type="text" class="TextBox" name="pass" id="pass" value="<%%VALUE(pass)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Level</div>
+						</td>
+					<td class="TableBody" id="noMouseOver" valign="top"><input tabindex="1" maxlength="40" size="40" type="text" class="TextBox" name="level" id="level" value="<%%VALUE(level)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				<tr>
+					<td class=TableHeader valign=top>
+						<div class=TableHeader style="text-align:right;">Type</div>
+						</td>
+					<td class="TableBody" id="noMouseOver" valign="top"><input tabindex="1" maxlength="40" size="40" type="text" class="TextBox" name="type" id="type" value="<%%VALUE(type)%%>">&nbsp;&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+
+	<div id="fieldDescription" class="fieldDescription" onclick="this.style.visibility='hidden';">&nbsp;</div>
+
+	<script>
+		if(document.getElementsByName('nama').length){
+			document.getElementsByName('nama')[0].focus();
+		}
+		document.observe("dom:loaded", function() {
+			var formAlreadyChanged=0;
+			$$('form')[0].observe('change', function(){ if(formAlreadyChanged) return; $('deselect').highlight().lastChild.data = " <%%TRANSLATION(Cancel)%%>"; formAlreadyChanged=1; });
+		});
+
+	</script>

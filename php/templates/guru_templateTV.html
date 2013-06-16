@@ -1,0 +1,13 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%select%%> and <%%endselect%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- open the generated 'guru_view.php' file in your text editor and -->
+<!-- change the value of $x->ShowTableHeader to 0 -->
+
+		<td id="guru-gnama-<%%VALUE(gid)%%>" valign="top" class="guru-gnama TableBody"><%%SELECT%%><%%VALUE(gnama)%%><%%ENDSELECT%%></td>
+		<td id="guru-gnokp-<%%VALUE(gid)%%>" valign="top" class="guru-gnokp TableBody"><%%SELECT%%><%%VALUE(gnokp)%%><%%ENDSELECT%%></td>
+		<td id="guru-gpass-<%%VALUE(gid)%%>" valign="top" class="guru-gpass TableBody"><%%SELECT%%><%%VALUE(gpass)%%><%%ENDSELECT%%></td>
+		<td id="guru-glevel-<%%VALUE(gid)%%>" valign="top" class="guru-glevel TableBody"><%%SELECT%%><%%VALUE(glevel)%%><%%ENDSELECT%%></td>
+		<td id="guru-gjawatan-<%%VALUE(gid)%%>" valign="top" class="guru-gjawatan TableBody"><%%SELECT%%><%%VALUE(gjawatan)%%><%%ENDSELECT%%></td>
+		<td id="guru-gpersatuan-<%%VALUE(gid)%%>" valign="top" class="guru-gpersatuan TableBody"><%%SELECT%%><%%VALUE(gpersatuan)%%><%%ENDSELECT%%></td>

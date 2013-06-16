@@ -1,0 +1,13 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%select%%> and <%%endselect%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- open the generated 'pentadbir_view.php' file in your text editor and -->
+<!-- change the value of $x->ShowTableHeader to 0 -->
+
+		<td id="pentadbir-pnama-<%%VALUE(pid)%%>" valign="top" class="pentadbir-pnama TableBody"><%%SELECT%%><%%VALUE(pnama)%%><%%ENDSELECT%%></td>
+		<td id="pentadbir-pnokp-<%%VALUE(pid)%%>" valign="top" class="pentadbir-pnokp TableBody"><%%SELECT%%><%%VALUE(pnokp)%%><%%ENDSELECT%%></td>
+		<td id="pentadbir-ppass-<%%VALUE(pid)%%>" valign="top" class="pentadbir-ppass TableBody"><%%SELECT%%><%%VALUE(ppass)%%><%%ENDSELECT%%></td>
+		<td id="pentadbir-plevel-<%%VALUE(pid)%%>" valign="top" class="pentadbir-plevel TableBody"><%%SELECT%%><%%VALUE(plevel)%%><%%ENDSELECT%%></td>
+		<td id="pentadbir-pjawatan-<%%VALUE(pid)%%>" valign="top" class="pentadbir-pjawatan TableBody"><%%SELECT%%><%%VALUE(pjawatan)%%><%%ENDSELECT%%></td>
+		<td id="pentadbir-pemel-<%%VALUE(pid)%%>" valign="top" class="pentadbir-pemel TableBody"><%%SELECT%%><%%VALUE(pemel)%%><%%ENDSELECT%%></td>
