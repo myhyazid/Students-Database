@@ -10,7 +10,10 @@ Enjoy!!!
 
 I created all of this file using Malay Language if you don't understand i can explain it here :
 
-Malay     English
+Malay  <span>  English
+<br>
 Maklumat = Detail
+<br>
 Guru     =Teacher
+<br>
 Pentadbir=Administrator
