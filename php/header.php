@@ -17,7 +17,8 @@
 	</head>
 	<body>
 		<!-- Add header template below here .. -->
-		<img width="1300" src="files/banner.png">
+		<img width="1300" src="http://i.imgur.com/2x7fWsO.png">
+		<!-- Change the img src above to change with your images.. -->
 
 		<?php if(!$_REQUEST['Embedded']){ echo htmlUserBar(); } ?>
 		<!-- process notifications -->
