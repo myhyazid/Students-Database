@@ -17,7 +17,7 @@
 	</head>
 	<body>
 		<!-- Add header template below here .. -->
-		<img width="1300" src="http://apps.stjohn.edu.my/ekoku/files/banner.png">
+		<img width="1300" src="files/banner.png">
 
 		<?php if(!$_REQUEST['Embedded']){ echo htmlUserBar(); } ?>
 		<!-- process notifications -->
